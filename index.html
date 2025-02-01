@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survivor's Story</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
 
+/* Navigation Bar */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0;
+}
+
+/* Sections */
+.section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+.section p {
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+  </style>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Him</a></li>
+            <li><a href="#abduction">The Abduction</a></li>
+            <li><a href="#rescue">The Rescue</a></li>
+            <li><a href="#current-life">Current Life</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Survivor's Story</h1>
+        <p>Strength, Resilience, and Hope</p>
+    </header>
+
+    <!-- About Him Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+       <img style="display:block;margin:0 auto;" src="https://pbs.twimg.com/profile_images/1739681846684786688/LJYIE4HK_400x400.jpg">
+             <p>My name is Edgar Edson Mwakabela well known as Sativa, a 28 years old Tanzanian. Born and raised in Mbeya. I'm a courageous individual who has faced unimaginable challenges. Despite the hardships he has endured, he continues to inspire those around him with his resilience.
+        </p>
+    </section>
+  
+      <!-- The Abduction Section -->
+    <section id="abduction" class="section">
+        <h2>Pre Abduction</h2>
+        <p>
+            I have worked as a business person selling phones but later I changed and started to do sports betting, a work that facilitated me to improve my livelihood and my family's. I moved from Mbeya to Dar es salaam with my friend Taivina to start our hustles there.
+        </p>
+    </section>
+
+    <!-- The Abduction Section -->
+    <section id="abduction" class="section">
+        <h2>The Abduction</h2>
+        <p>
+            On 22 June, I was abducted by Tanzania Police Officers, 
+            The ordeal lasted for [duration], during which he faced [specific challenges or abuses]. 
+            This traumatic experience left a lasting impact on my life, but it also revealed my incredible strength and will to survive.
+        </p>
+    </section>
+
+    <!-- The Rescue Section -->
+    <section id="rescue" class="section">
+        <h2>The Rescue</h2>
+        <p>
+            Thanks to the efforts of [rescuers, e.g., law enforcement, community members, or family], 
+            [your client's name] was rescued on [date]. The rescue was a turning point in his life, 
+            marking the beginning of his journey toward healing and recovery.
+        </p>
+    </section>
+
+    <!-- Current Life Section -->
+    <section id="current-life" class="section">
+        <h2>Current Life</h2>
+        <p>
+            Today, I'm working in rebuilding my life. Still I'm doing sports betting also advocating for victims of police violence. My story is a testament to the power of hope and the human spirit.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Survivor's Story. All rights reserved.</p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script src="script.js"></script>
+</body>
+  <script>
+    // Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+  </script>
+</html>
